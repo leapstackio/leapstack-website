@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+  {{ partial "head.html" . }}
+
+</head>
+
+<body>
+
+  {{ partial "header.html" . }}
+
+  {{ block "main" . }}{{ end }}
+
+  {{ partial "footer.html" . }}
+
+  <!--Vendor js-->
+  <script src="assets/js/vendors/counterup.js" type="module"></script>
+  <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+  <script src="assets/js/vendors/fslightbox.js"></script>
+  <script src="assets/js/vendors/jos.min.js"></script>
+  <script src="assets/js/vendors/menu.js"></script>
+
+  <!-- Main js -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
